@@ -204,6 +204,7 @@ svg {
 
 .preview--img {
     margin-bottom: 10px;
+    transition: all 0.5s;
 }
 
 .preview__start::after {
@@ -225,9 +226,14 @@ svg {
     cursor: pointer;
 }
 
-.preview__start::after:hover{
-    transform: scale(0.5);
-}
+/* .preview__start::after:hover{
+    transform: scale(2);
+} */
+
+/* .preview--img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+} */
 
 
 .preview__text {
@@ -249,8 +255,14 @@ svg {
     background-size: contain;
     background-repeat: no-repeat;
     /* background-color: red; */
-    fill: blue;
+    /* fill: blue; */
     
+}
+
+
+.preview__text:hover .preview__text::after{
+    color: #627a99;
+    cursor: pointer;
 }
 
 .preview__desc {
