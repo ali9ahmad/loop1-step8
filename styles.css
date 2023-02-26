@@ -28,9 +28,9 @@ body{
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Livvic", "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 600;
-    background-color: var(--main-bg-color);
+    background-color: #f8ebe9;
 }
 
 img{
@@ -73,3 +73,156 @@ a{
 }
 /************** /ROOT STYLES END **************/
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** MAIN STYLES START **************/
+/************** TOUR STYLES START **************/
+.tour__wrapper {
+    display: flex;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    width: 1100px;
+    background-color: red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 40px 24px -24px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+.tour__wrapper--start{
+    display: flex;
+    align-items: start;
+    padding-top: 40px;
+    padding-left: 35px;
+    width: 40%;
+    height: 708px;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.back {
+    display: flex;
+    justify-content: space-between;
+    width: 55px;
+    font-size: 12px;
+    color: #627a99;
+    transition: 0.5s;
+}
+
+.back:hover {
+    color: #000;
+    fill: #000;
+}
+
+/* .back path:hover {
+    fill:#000;
+} */
+
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */    
+
+.tour__wrapper--end{
+    padding: 40px 35px;
+    width: 70%;
+    background-color: #fff;
+}
+
+.cities__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+}
+
+.city__link {
+    font-size: 14px;
+    color: #c1c1c1;
+    transition: 0.5s;
+}
+
+.city__link:hover {
+    color: #000;
+}
+
+.city__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+.visiting{
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 100%;
+    font-family: "Playfair+Display";
+}
+
+.visiting__title {
+    position: relative;
+    margin-bottom: 20px;
+    width: 80%;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.visiting__title::after {
+    position: absolute;
+    right: -70px;
+    bottom: 42px;
+    display: block;
+    content: "";
+    width: 110px;
+    height: 4.5px;
+    background-color: #000;
+}
+
+.visiting__text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.preview {
+   display: flex;
+   align-items: start;
+   padding-right: 50px;
+}
+
+.preview__start {
+    margin-right: 50px;
+}
+
+.preview--img {
+    margin-bottom: 10px;
+}
+
+.preview--img::after {
+    content: "";
+    display: block;
+    background-image: url("./img/");
+}
+
+.preview__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: roboto;
+    font-size: 12px;
+}
+
+
+
+.preview__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 50%;
+}
+
+
+/************** TOUR STYLES END **************/
+/************** MAIN STYLES END **************/
